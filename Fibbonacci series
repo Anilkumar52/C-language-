@@ -1,0 +1,26 @@
+#include <stdio.h>
+int fact(int f)
+{
+    if(f==1)
+    {
+        return 1;
+    }
+    else
+    {
+        return f*fact(f-1);
+    }
+}
+void main()
+{
+    int n,res,z,t,dem;
+    printf("enter the students ");
+    scanf("%d",&n);
+    printf("enter no of seats ");
+    scanf("%d",&z);
+    res=fact(n);
+    t=n-z;
+    dem=fact(t);
+    printf("%d",res/dem);
+
+
+}
